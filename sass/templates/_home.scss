@@ -1,0 +1,938 @@
+div#page.site
+{
+
+	a.skip-link.screen-reader-text
+	{
+		display: none;
+	}
+
+	div#content.site-content
+	{
+		// -webkit-transition: all 0.3s ease-in;
+	 //    -moz-transition: all 0.3s ease-in;
+	 //    -ms-transition: all 0.3s ease-in;
+	 //    -o-transition: all 0.3s ease-in;
+	 //    transition: all 0.3s ease-in;
+	 //    -webkit-transition: -webkit-transform 0.3s ease-out;
+		// -moz-transition: transform 0.3s ease-out;
+		// -o-transition: transform 0.3s ease-out;
+		// transition: transform 0.3s ease-out;
+		@include ease;
+	    
+		div#primary.content-area
+		{
+			main#main.site-main
+			{
+				div.hero
+				{
+
+					position: relative;
+					z-index: 2;
+					background-size: cover;
+    				background-position: center center;
+    				// -webkit-transition: all 0.3s ease-out;
+				    // -moz-transition: all 0.3s ease-out;
+				    // -ms-transition: all 0.3s ease-out;
+				    // -o-transition: all 0.3s ease-out;
+				    // transition: all 0.3s ease-out;
+				    // -webkit-transition: -webkit-transform 0.3s ease-out;
+				    // -moz-transition: transform 0.3s ease-out;
+				    // -o-transition: transform 0.3s ease-out;
+				    // transition: transform 0.3s ease-out;
+
+					h1
+					{
+						margin: 0;
+						padding-top: 150px;
+					    text-align: center;
+					    color: white;
+					    font-family: 'Nothing You Could Do', cursive;
+					    font-size: 45px;
+					}
+
+					p
+					{
+						margin: 0;
+						margin-top: 20px;
+						padding-bottom: 350px;
+						text-align: center;
+						color: white;
+						
+						font-size: 18px;
+					}
+				}
+				div#nav-bg
+				{
+					background: #222;
+				  	position: fixed;
+				  	height: 70px;
+				  	width: 100%;
+				  	top: 0;
+				  	z-index: 1;
+
+				  	@include breakpoint(phone)
+				  	{
+				  		height: 70.2px;
+				  	}
+				}
+
+				.arrow-wrap .arrow 
+				{
+					-webkit-animation: arrows 2.8s 0.4s;
+					-webkit-animation-delay: 2s;
+				}
+
+				a.arrow-wrap
+				{
+					position:absolute;
+					z-index:4;
+					left:50%;
+					top:550px;
+					margin-left:-5em;
+					background:#111;
+					width:10em;
+					height:10em;
+					padding:4em 2em;
+					border-radius:50%;
+					font-size:0.5em;
+					display:block;
+					
+
+					@include breakpoint(small-phone)
+					{
+						top:450px;
+					}
+
+					@include breakpoint(phone)
+					{
+						top:450px;
+					}
+
+					&:hover
+					{
+  						opacity:1;
+					}
+
+					.arrow 
+					{
+						float:left;
+						position:relative;
+						width: 0px;
+						height: 0px;
+						border-style: solid;
+						border-width: 3em 3em 0 3em;
+						border-color: #ffffff transparent transparent transparent;
+						-webkit-transform:rotate(360deg)
+					}
+
+					.arrow:after 
+					{
+						content:'';
+						position:absolute;
+						top:-3.2em;
+						left:-3em;
+						width: 0px;
+						height: 0px;
+						border-style: solid;
+						border-width: 3em 3em 0 3em;
+						border-color: #111 transparent transparent transparent;
+						-webkit-transform:rotate(360deg)
+					}
+
+					@-webkit-keyframes arrows 
+					{
+					    0% { top:0; }
+					    10% { top:12%; }
+					    20% { top:0; }
+					    30% { top:12%; }
+					    40% { top:-12%; }
+					    50% { top:12%; }
+					    60% { top:0; }
+					    70% { top:12%; }
+					    80% { top:-12%; }
+					    90% { top:12%; }
+					    100% { top:0; }
+					}
+				}
+
+				div#mission
+				{
+					padding-top: 60px;
+					background: white;
+					-webkit-transition: all 0.3s ease-out;
+				    -moz-transition: all 0.3s ease-out;
+				    -ms-transition: all 0.3s ease-out;
+				    -o-transition: all 0.3s ease-out;
+				    transition: all 0.3s ease-out;
+
+					div.row
+					{
+						.half
+						{
+							@include breakpoint(tablet)
+							{
+								width: 100% !important;
+								margin-right: 0;
+							}
+						}
+
+						h2
+						{
+							font-family: 'Inconsolata', ;
+							font-size: 35px;
+						}
+
+						img
+						{
+							
+						}
+
+						a
+						{
+							text-decoration: none;
+							color: $darkgreen;
+							@include ease;
+
+							&:hover
+						  	{
+						  		color: $lightgreen;
+						  		@include ease;
+						  	}
+						}
+
+						p
+						{
+							margin-top: 0;
+							font-size: 18px;
+							line-height: 30px;
+							margin-bottom: 0;
+
+							@include breakpoint(tablet)
+							{
+								margin-top: 20px;
+							}
+						}
+					}
+				}
+
+				div#donate
+				{
+
+					background: white;
+					padding-top: 60px;
+					-webkit-transition: all 0.3s ease-out;
+				    -moz-transition: all 0.3s ease-out;
+				    -ms-transition: all 0.3s ease-out;
+				    -o-transition: all 0.3s ease-out;
+				    transition: all 0.3s ease-out;
+
+
+					div.row
+					{
+
+						width: 70%;
+						max-width: 900px;
+						margin: 0 auto;
+						@include clearfix;
+
+						@include breakpoint(tablet)
+						{
+							width: 85%;
+						}
+
+						.half
+						{
+							@include breakpoint(tablet)
+							{
+								width: 100% !important;
+								margin-right: 0;
+							}
+						}
+
+						h2
+						{	
+							font-family: 'Inconsolata', ;
+							font-size: 35px;
+							text-align: center;
+						}
+
+						a
+						{
+							text-decoration: none;
+							color: $darkgreen;
+
+							@include ease;
+
+							&:hover
+						  	{
+						  		color: $lightgreen;
+						  		@include ease;
+						  	}
+						}
+
+						p
+						{
+							text-align: center;
+							font-size: 18px;
+							line-height: 30px;
+							margin: 0;
+							margin-bottom: 10px;
+
+							img
+							{
+								display: block;
+								margin: auto;
+								width: 10%;
+								height: auto;
+
+								@include breakpoint(phone)
+								{
+									width: 20%;
+								}
+							}
+						}
+
+
+
+						form#sc_checkout_form_1
+						{
+							margin-bottom: 0;
+
+							@include breakpoint(phone)
+							{
+								margin-bottom: 20px;
+							}
+						}
+
+						form#sc_checkout_form_2
+						{
+							margin-bottom: 0;
+
+							@include breakpoint(phone)
+							{
+								margin-bottom: 20px;
+							}
+						}
+
+						div#countdown-wrap
+						{
+
+							width: 100%;
+						  	height: 160px;
+						  	padding: 0;
+						  	font-family: arial;
+
+							div#goal
+							{
+								font-size: 48px;
+								text-align: right;
+								width: 100%;
+
+								span
+								{
+									font-size: 30px;
+								}
+							}
+
+							div#glass
+							{
+
+								width: 100%;
+						  		height: 20px;
+						  		background: #c7c7c7;
+						  		border-radius: 10px;
+						  		float: left;
+						  		overflow: hidden;
+						  		margin-bottom: 10px;
+
+								div#progress
+								{
+									float: left;
+						  			height: 20px;
+						  			background: #478978;
+						  			z-index: 333;
+								}
+							}
+
+							div.goal-stat-funded
+							{
+						  		padding-left: 10px;
+						  		margin: 0;
+						  		float: left;
+
+						  		@include breakpoint(phone)
+						  		{
+						  			padding-left: 0;
+						  		}
+
+
+								span.goal-number
+								{
+									
+									font-weight: bold;
+									
+								}
+
+								span.goal-label
+								{
+									
+								}
+							}
+
+							div.goal-stat-raised
+							{
+						  		padding-top: 0;
+						  		margin: 0 auto;
+						  		width: 110px;
+						  		display: block;
+						  		
+						  		
+
+								span.goal-number
+								{
+									
+									font-weight: bold;
+									
+								}
+
+								span.goal-label
+								{
+									
+								}
+							}
+
+							div.goal-stat-countdown
+							{
+						  		padding-right: 10px;
+						  		margin: 0;
+						  		
+						  		float: right;
+
+						  		@include breakpoint(phone)
+						  		{
+						  			padding-right: 0;
+						  		}
+
+								span.goal-number
+								{
+									float: left;
+									margin-right: 5px;
+									font-weight: bold;
+								}
+
+								span.goal-label
+								{
+									
+								}
+							}
+						}
+
+						.monthly
+						{
+							float: left;
+						  	margin-left:40%;
+						  	cursor: pointer;
+						  	
+
+						  	&:hover
+						  	{
+						  		
+						  		// color: green;
+						  	}
+
+						  	@include breakpoint(tablet)
+						  	{
+						  		margin-left: 35%;
+						  	}
+
+						  	@include breakpoint(phone)
+						  	{
+						  		margin-left: 25%;
+						  	}
+						}
+
+						.monthly-content
+						{
+						  	text-align:center;
+						  	padding-top: 50px;
+						}
+
+						.single
+						{
+						  	float:right;
+						  	margin-right:40%;
+						  	cursor: pointer;
+
+						  	
+
+						  	&:hover
+						  	{
+						  		
+						  		// color: green;
+						  	}
+
+						  	@include breakpoint(tablet)
+						  	{
+						  		margin-right: 35%;
+						  	}
+
+						  	@include breakpoint(phone)
+						  	{
+						  		margin-right: 25%;
+						  	}
+						}
+
+						.single-content
+						{
+						  	text-align:center;
+						  	padding-top: 50px;
+						}
+
+						.display-none
+						{
+						  	display: none;
+						}
+
+						.border-bottom
+						{
+						  	border-bottom: 3px solid #C48B76;
+						}
+					}
+				}
+
+				div#contact
+				{
+					padding-top: 60px;
+					background: white;
+					-webkit-transition: all 0.3s ease-out;
+				    -moz-transition: all 0.3s ease-out;
+				    -ms-transition: all 0.3s ease-out;
+				    -o-transition: all 0.3s ease-out;
+				    transition: all 0.3s ease-out;
+
+					div.row
+					{
+
+						width: 70%;
+						max-width: 900px;
+						margin: 0 auto;
+						@include clearfix;
+
+						@include breakpoint(tablet)
+						{
+							width: 85%;
+						}
+
+						a
+						{
+							text-decoration: none;
+							color: $darkgreen;
+
+							@include ease;
+
+							&:hover
+						  	{
+						  		color: $lightgreen;
+						  		@include ease;
+						  	}
+						}
+
+						h2
+						{
+							font-family: 'Inconsolata', ;
+							font-size: 35px;
+							text-align: center;
+						}
+
+						p
+						{
+							text-align: center;
+							font-size: 18px;
+							line-height: 30px;
+						}
+
+							
+
+								
+
+						input:not(#ninja_forms_field_4), textarea
+						{
+							background-color: $gray;
+							border: none;
+							padding: 10px;
+							resize: none;
+							color: #66636C;
+							display: block;
+							margin: auto;
+							max-width: 100%;
+							@include ease;
+
+							@include breakpoint(tablet)
+							{
+								max-width: 100%;
+								@include ease;
+							}
+						}
+
+						input#ninja_forms_field_4
+						{
+							display: block;
+							margin: auto;
+							width: 100%;
+							padding: 10px;
+							border: none;
+							color: #66636C;
+							background-color: $darkgray;
+
+							@include ease;
+
+							&:hover
+							{
+								@include ease;
+								background-color: $gray;
+								
+							}
+
+							@include breakpoint(tablet)
+							{
+								width: 100%;
+							}
+						}
+
+						div#ninja_forms_form_1_response_msg
+						{
+							color: #478978;
+						}
+
+						div#ninja_forms_field_2_error, div#ninja_forms_field_1_error, div#ninja_forms_field_3_error
+						{
+							p
+							{
+								color: #a94442;
+							}
+						}
+
+
+					}
+				}
+
+				div#newsletter
+				{
+					padding-top: 60px;
+					background: white;
+					-webkit-transition: all 0.3s ease-out;
+				    -moz-transition: all 0.3s ease-out;
+				    -ms-transition: all 0.3s ease-out;
+				    -o-transition: all 0.3s ease-out;
+				    transition: all 0.3s ease-out;
+
+					div.row
+					{
+						h2
+						{
+							margin-top: 0;
+							margin-bottom: 10px;
+							font-family: 'Inconsolata', ;
+							font-size: 35px;
+						}
+
+						.half
+						{
+							@include breakpoint(tablet)
+							{
+								width: 100% !important;
+								margin-right: 0;
+							}
+						}
+
+						a
+						{
+							text-decoration: none;
+							color: $darkgreen;
+
+							@include ease;
+
+							&:hover
+						  	{
+						  		color: $lightgreen;
+						  		@include ease;
+						  	}
+						}
+
+						p
+						{
+							margin-top: 0;
+							font-size: 18px;
+							line-height: 30px;
+							margin-bottom: 20px;
+						}
+
+						div.es_msg
+						{
+							padding: 0;
+							color: #478978 !important;
+
+							span#es_msg_pg
+							{
+								color: #478978 !important;
+							}
+						}
+
+						div.es_lablebox
+						{
+							display: none;
+						}
+
+						div.es_textbox
+						{
+							padding: 0;
+							margin-top: 47px;
+
+							@include breakpoint(tablet)
+							{
+								margin-top: 0;
+							}
+
+							input#es_txt_name_pg
+							{
+								display: none;
+							}
+
+							input#es_txt_email_pg
+							{
+								background-color: $gray;
+								border: none;
+								color: #66636C;
+								padding: 10px;
+								width: 100%;
+								&:focus::-webkit-input-placeholder { color:transparent; }
+								&:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+								&:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+								&:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+							}
+						}
+
+						div.es_button
+						{
+							margin-bottom: 20px;
+							input#es_txt_button_pg
+							{
+								padding: 0;
+								width: 100%;
+								padding: 10px;
+								border: none;
+								color: #66636C;
+								background-color: $darkgray;
+
+								@include ease;
+
+								&:hover
+								{
+									@include ease;
+									background-color: $gray;
+								}
+							}
+						}
+
+						div#ninja_forms_form_5_cont.ninja-forms-cont
+						{
+							text-align: center;
+							div#ninja_forms_form_5_wrap.ninja-forms-form-wrap
+							{
+								div#ninja_forms_form_5_response_msg.ninja-forms-response-msg.ninja-forms-success-msg
+								{
+									div
+									{
+										p
+										{
+											text-align: center !important;
+											margin-top: 47px;
+										}
+									}
+								}
+							}
+						}
+
+						input#ninja_forms_field_5
+						{
+							background-color: $gray;
+							border: none;
+							color: #66636C;
+							padding: 10px;
+						}
+
+						input#ninja_forms_field_6
+						{
+							width: 100%;
+							padding: 10px;
+							border: none;
+							color: #66636C;
+							background-color: $darkgray;
+
+							@include ease;
+
+							&:hover
+							{
+								@include ease;
+								background-color: $gray;
+							}
+						}
+
+						div#ninja_forms_field_6_div_wrap
+						{
+							margin-bottom: 0;
+
+							@include breakpoint(phone)
+							{
+								margin-bottom: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+					
+					
+		aside#secondary.widget-area
+		{
+
+			section#search-2.widget.widget_search
+			{
+
+				display: none;
+
+				form.search-form
+				{
+					label
+					{
+						span.screen-reader-text
+						{
+
+						}
+
+						input.search-field
+						{
+
+						}
+					}
+
+					input.search-submit
+					{
+
+					}
+				}
+			}
+
+			section#recent-posts-2.widget.widget_recent_entries
+			{
+
+				display: none;
+
+				h2.widget-title
+				{
+
+				}
+
+				ul
+				{
+					li
+					{
+						a
+						{
+
+						}
+					}
+				}
+			}
+
+			section#recent-comments-2.widget.widget_recent_comments
+			{
+
+				display: none;
+
+				h2.widget-title
+				{
+
+				}
+
+				ul#recentcomments
+				{
+					li.recentcomments
+					{
+						span.comment-author-link
+						{
+							a
+							{
+
+							}
+						}
+					}
+				}
+			}
+
+			section#archives-2.widget.widget_archive
+			{
+
+				display: none;
+
+				h2.widget-title
+				{
+
+				}
+
+				ul
+				{
+					li
+					{
+						a
+						{
+
+						}
+					}
+				}
+			}
+
+			section#categories-2.widget.widget_categories
+			{
+
+				display: none;
+
+				h2.widget-title
+				{
+					ul
+					{
+						li.cat-item
+						{
+							a
+							{
+
+							}
+						}
+					}
+				}
+			}
+
+			section#meta-2.widget.widget_meta
+			{
+
+				display: none;
+
+				h2.widget-title
+				{
+					ul
+					{
+						li
+						{
+							a
+							{
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

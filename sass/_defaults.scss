@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=La+Belle+Aurore|Nothing+You+Could+Do|Marck+Script|Slabo+27px|Ubuntu|Special+Elite|Kalam|Port+Lligat+Slab|Inconsolata|Lateef|Clicker+Script);
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+body
+{
+	background: #222;
+    overflow-x: hidden;
+}
+
+body.admin-bar
+{
+    header#masthead.site-header
+    {
+        margin-top: 32px !important;
+
+        @include breakpoint(mobile-admin-bar)
+        {
+            margin-top: 46px !important;
+        }
+    }
+
+    div#nav-bg
+    {
+        background: #222;
+        position: fixed;
+        height: 102px !important;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+
+        @include breakpoint(mobile-admin-bar)
+        {
+            height: 116.2px !important;
+        }
+    }
+
+    @include breakpoint(not-fixed-mobile-admin-bar)
+    {
+        #wpadminbar
+        {
+            position: fixed !important;
+        }
+    }
+
+}
+
+.hero
+{
+	// @include background-image(fixed);
+}
+
+.video-container iframe 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.ninja-forms-required-items
+{
+	display: none;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+body.home
+{
+    img
+    {
+        width: 100%;
+    }
+}
+
+article:not(.comment-body)
+{
+    img
+    {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+.lock
+{
+    overflow: hidden;
+    height: 100%;
+}
+
+.blur
+{
+    // -webkit-transition: all 0.3s ease-in;
+    // -moz-transition: all 0.3s ease-in;
+    // -ms-transition: all 0.3s ease-in;
+    // -o-transition: all 0.3s ease-in;
+    // transition: all 0.3s ease-in;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    @include ease;
+}
+
+.body-opacity
+{
+    @include ease;
+    background-color: rgba(192,192,192,0.3) !important;
+}

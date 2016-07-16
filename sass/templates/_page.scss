@@ -1,0 +1,109 @@
+body.page:not(.home)
+{
+
+	background-color: white;
+
+	div#page.site
+	{
+		div#content.site-content
+		{
+
+			margin-top: 92px;
+		    -webkit-transition: all 0.3s ease-out;
+		    -moz-transition: all 0.3s ease-out;
+		    -ms-transition: all 0.3s ease-out;
+		    -o-transition: all 0.3s ease-out;
+		    transition: all 0.3s ease-out;
+
+			div#primary.content-area
+			{
+
+				
+
+				main#main.site-main
+				{
+					div.row
+					{
+						div.hero
+						{
+
+
+							background-size: cover;
+		    				background-position: center center;
+
+							h1
+							{
+								padding-top: 200px;
+								padding-bottom: 200px;
+								color: white;
+								font-size: 45px;
+								font-family: 'Nothing You Could Do', cursive;
+							}
+						}
+
+						article
+						{
+							header.entry-header
+							{
+								h1.entry-title
+								{
+									display: none;
+								}
+							}
+
+							div.entry-content
+							{
+
+								h2
+								{
+									font-family: 'Inconsolata', ;
+									font-size: 35px;
+								}
+
+								p
+								{
+									font-size: 18px;
+									line-height: 30px;
+
+									img
+									{
+										width: 100%;
+										height: auto;
+									}
+
+									a
+									{
+										text-decoration: none;
+										color: $darkgreen;
+										text-decoration: none;
+
+										
+									
+										@include ease;
+
+										&:hover
+										{
+											color: $green;
+											@include ease;
+										}
+									}
+								}
+							}
+
+							footer.entry-footer
+							{
+								span.edit-link
+								{
+									a
+									{
+										color: $orange;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

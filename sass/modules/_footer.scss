@@ -1,0 +1,34 @@
+footer#colophon.site-footer
+{
+	div.site-info
+	{
+		div.row
+		{
+			div.bible-verse
+			{
+				blockquote
+				{
+
+					margin: 0;
+
+					
+					p
+					{
+						margin-top: 20px;
+						margin-bottom: 20px;
+						color: white;
+						text-align: right;
+					}
+					
+				}
+
+				i
+				{
+					color: white;
+					float: right;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

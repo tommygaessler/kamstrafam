@@ -1,0 +1,348 @@
+body.hfeed
+{
+
+	background-color: white;
+
+	div#page.site
+	{
+
+		background-color: $gray;
+
+		a.skip-link.screen-reader-text
+		{
+			
+		}
+
+		div#content.site-content
+		{
+
+			margin-top: 72px;
+			-webkit-transition: all 0.3s ease-out;
+		    -moz-transition: all 0.3s ease-out;
+		    -ms-transition: all 0.3s ease-out;
+		    -o-transition: all 0.3s ease-out;
+		    transition: all 0.3s ease-out;
+
+
+			div#primary.content-area
+			{
+
+				
+
+				
+				
+
+				main#main.site-main
+				{
+					max-width: 600px;
+					display: block;
+					margin: auto;
+					
+					section.error-404.not-found
+					{
+						text-align: center;
+					}
+					
+
+					header
+					{
+						h1.page-title.screen-reader-text
+						{
+							font-family: 'Nothing You Could Do', cursive;
+							font-size: 45px;
+						}
+					}
+
+					article
+					{
+						margin-top: 20px;
+						background-color: white;
+
+						header.entry-header
+						{
+
+							padding: 15px;
+
+							h2.entry-title
+							{
+								margin-top: 0;
+								font-family: 'Inconsolata', ;
+								font-size: 35px;
+
+								
+
+								a
+								{
+									text-decoration: none;
+									color: $purple;
+
+									@include ease;
+
+									&:hover
+								  	{
+								  		color: $lightpurple;
+								  		@include ease;
+								  	}
+								}								
+							}
+
+							iframe.twitter-share-button.twitter-share-button-rendered.twitter-tweet-button
+							{
+								margin-top: 5px;
+								float: right;
+								margin-left: 15px;
+							}
+
+							div.fb-share-button.fb_iframe_widget
+							{
+								float: right;
+								margin-top: 5px;
+							}
+
+							div.entry-meta
+							{
+
+								
+
+								span.posted-on
+								{
+									font-size: 18px;
+									line-height: 30px;
+									a
+									{
+										text-decoration: none;
+										font-size: 18px;
+										line-height: 30px;
+										color: $blue;
+
+										@include ease;
+
+										&:hover
+									  	{
+									  		color: $lightblue;
+									  		@include ease;
+									  	}
+									}
+								}
+
+								span.byline
+								{
+									font-size: 18px;
+									line-height: 30px;
+									span.author.vcard
+									{
+										font-size: 18px;
+										line-height: 30px;
+										a
+										{
+											text-decoration: none;
+											font-size: 18px;
+											line-height: 30px;
+											color: $blue;
+
+											@include ease;
+
+											&:hover
+										  	{
+										  		color: $lightblue;
+										  		@include ease;
+										  	}
+										}
+									}
+								}
+							}
+						}
+
+						a
+						{
+							vertical-align: top;
+							// color: $blue;
+						}
+
+						div.entry-content
+						{
+							padding: 15px;
+
+							p
+							{
+								margin: 0;
+								font-size: 18px;
+								line-height: 30px;
+
+								a.more-link
+								{
+									text-decoration: none;
+									color: $turquoise;
+
+									@include ease;
+
+									&:hover
+									{
+										color: $darkturquoise;
+										@include ease;
+									}
+								}
+							}
+
+
+
+							p
+							{
+								img
+								{
+									width: 100%;
+									height: auto;
+								}
+
+								a
+								{
+									color: $darkgreen;
+									text-decoration: none;
+
+									@include ease;
+
+									&:hover
+									{
+										color: $green;
+										@include ease;
+									}
+
+								}
+							}
+
+							figure.wp-caption.alignnone
+							{
+								width: 100%;
+								margin: 0;
+							}
+						}
+
+						footer.entry-footer
+						{
+
+							padding: 15px;
+
+							span.cat-links
+							{
+								display: block;
+								font-size: 18px;
+								line-height: 30px;
+								
+
+								a
+								{
+									text-decoration: none;
+									font-size: 18px;
+									line-height: 30px;
+									color: $blue;
+
+									@include ease;
+
+									&:hover
+									{
+										color: $lightblue;
+										@include ease;
+									}
+								}
+							}
+
+							span.comments-link
+							{
+								display: inline-block;
+								margin-top: 10px;
+								display: none;
+
+								a
+								{
+									text-decoration: none;
+									
+
+									span.screen-reader-text
+									{
+										
+									}
+								}
+							}
+
+							span.edit-link
+							{
+
+								a
+								{
+									color: $orange;
+								}
+							}
+						}
+					}
+				}
+
+				nav.navigation.posts-navigation
+				{
+
+					h2.screen-reader-text
+					{
+						display: none;
+					}
+
+					div.nav-links
+					{
+						div.nav-previous
+						{
+
+							float: left;
+							margin-top: 20px;
+
+							a
+							{
+								font-size: 18px;
+								line-height: 30px;
+								color: $darkturquoise;
+								text-decoration: none;
+
+								@include ease;
+
+								&:hover
+								{
+									color: $turquoise;
+									@include ease;
+								}
+							}
+						}
+
+						div.nav-next
+						{
+
+							float: right;
+							margin-top: 20px;
+
+							a
+							{
+								font-size: 18px;
+								line-height: 30px;
+								color: $darkturquoise;
+								text-decoration: none;
+
+								@include ease;
+
+								&:hover
+								{
+									color: $turquoise;
+									@include ease;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+body.archive
+{
+	h1.page-title
+	{
+		font-family: 'Nothing You Could Do', cursive;
+		font-size: 45px;
+	}
+}

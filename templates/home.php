@@ -27,23 +27,41 @@ get_header();
 				<div id="mission">
 					<div class="row">
 						<h2><?php the_field('our_mission'); ?></h2>
-						<div class="column half">
+						<!-- <div class="column half">
 							<img src="<?php the_field('family_photo'); ?>">
 						</div>
 						<div class="column half">
 							<p><?php the_field('our_mission_description'); ?></p>
-						</div>
+						</div> -->
+						<!-- <h2>Recent Blog Post</h2> -->
+
+						<?php $the_query = new WP_Query( 'posts_per_page=1' ); ?>
+
+						<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+
+						<a href="<?php the_permalink(); ?>"><img src="<?php echo the_field('background_image'); ?>"></a>
+
+						<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+
+
+						<?php the_content('Continue Reading') ?>
+
+						<?php
+						endwhile;
+						wp_reset_postdata();
+						?>
+
 					</div>
 				</div>
 				<div id="donate">
 					<div class="row">
 						<h2><?php the_field('donations_title'); ?></h2>
 						<p><?php the_field('donation_description'); ?></p>
-					
+
 						<div class="column half">
 							<p><?php the_field('donation_progress'); ?></p>
 						</div>
-						
+
 						<div class="column half">
 							<img src="<?php the_field('puzzle_photo'); ?>">
 						</div>
@@ -56,24 +74,24 @@ get_header();
 							 -->
 
 							<!-- <p> -->
-							<?php 
-							// echo do_shortcode('[stripe name="KamstraFam" description="Prague Mission"][stripe_subscription][stripe_amount label="Monthly Donation Amount"][/stripe]'); 
+							<?php
+							// echo do_shortcode('[stripe name="KamstraFam" description="Prague Mission"][stripe_subscription][stripe_amount label="Monthly Donation Amount"][/stripe]');
 							?>
-								
+
 							<!-- </p> -->
 						<!-- </div>
 						<div class="single-content display-none">
 
 							<p>
-							<?php 
-							// echo do_shortcode('[stripe name="KamstraFam" description="Prague Mission"][stripe_amount label="Single Donation Amount:"][/stripe]'); 
+							<?php
+							// echo do_shortcode('[stripe name="KamstraFam" description="Prague Mission"][stripe_amount label="Single Donation Amount:"][/stripe]');
 							?>
 							</p>
 						</div> -->
 
-						<?php 
+						<?php
 
-						  // require_once('wp-content/plugins/wp-simple-pay-pro-for-stripe/vendor/stripe/stripe-php/init.php'); 
+						  // require_once('wp-content/plugins/wp-simple-pay-pro-for-stripe/vendor/stripe/stripe-php/init.php');
 
 						  // \Stripe\Stripe::setApiKey("");
 
@@ -89,18 +107,18 @@ get_header();
 						?>
 
 						<!-- <div id="countdown-wrap">
-						  <div id="goal"><span>Goal: </span>$<?php 
-						  // echo $goal; 
+						  <div id="goal"><span>Goal: </span>$<?php
+						  // echo $goal;
 						  ?></div>
 						  <div id="glass">
-						    <div id="progress" style="width: <?php 
-						    // echo $progress; 
+						    <div id="progress" style="width: <?php
+						    // echo $progress;
 						    ?>%;">
 						    </div>
 						  </div>
 						  <div class="goal-stat-funded">
-						    <span class="goal-number"><?php 
-						    // echo $progress; 
+						    <span class="goal-number"><?php
+						    // echo $progress;
 						    ?>%</span>
 						    <span class="goal-label">Funded</span>
 						  </div>
@@ -109,8 +127,8 @@ get_header();
 						    <span class="goal-label">Days to Go</span>
 						  </div>
 						  <div class="goal-stat-raised">
-						    <span class="goal-number">$<?php 
-						    // echo $balance; 
+						    <span class="goal-number">$<?php
+						    // echo $balance;
 						    ?></span>
 						    <span class="goal-label">Raised</span>
 						  </div>
@@ -133,13 +151,13 @@ get_header();
 						</div>
 						<div class="column half">
 							<?php
-							 // if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 5 ); }; 
+							 // if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 5 ); };
 							 ?>
 							<?php es_subbox( $namefield = "YES", $desc = "", $group = "" ); ?>
 						</div>
 					</div>
 				</div>
-				
+
 
 			<?php
 			endwhile; // End of the loop.

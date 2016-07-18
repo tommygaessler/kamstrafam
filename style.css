@@ -787,28 +787,39 @@ div#page.site div#content.site-content {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
-    @media (max-width: 800px) {
-      div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row .half {
-        width: 100% !important;
-        margin-right: 0; } }
-    div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row h2 {
-      font-family: "Inconsolata";
-      font-size: 35px; }
-    div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row a {
-      text-decoration: none;
-      color: #87ab7c;
-      transition: all 333ms ease-in-out; }
-      div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row a:hover {
-        color: #dde7da;
-        transition: all 333ms ease-in-out; }
-    div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row p {
-      margin-top: 0;
-      font-size: 18px;
-      line-height: 30px;
-      margin-bottom: 0; }
+    div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row {
+      max-width: 600px;
+      display: block;
+      margin: auto; }
+      div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row iframe.twitter-share-button.twitter-share-button-rendered.twitter-tweet-button {
+        margin-top: 5px;
+        float: right;
+        margin-left: 15px; }
+      div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row div.fb-share-button.fb_iframe_widget {
+        float: right;
+        margin-top: 5px; }
       @media (max-width: 800px) {
-        div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row p {
-          margin-top: 20px; } }
+        div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row .half {
+          width: 100% !important;
+          margin-right: 0; } }
+      div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row h2 {
+        font-family: "Inconsolata";
+        font-size: 35px; }
+      div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row a {
+        text-decoration: none;
+        color: #87ab7c;
+        transition: all 333ms ease-in-out; }
+        div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row a:hover {
+          color: #dde7da;
+          transition: all 333ms ease-in-out; }
+      div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row p {
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 0; }
+        @media (max-width: 800px) {
+          div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.row p {
+            margin-top: 20px; } }
   div#page.site div#content.site-content div#primary.content-area main#main.site-main div#donate {
     background: white;
     padding-top: 60px;

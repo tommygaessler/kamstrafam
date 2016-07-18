@@ -18,7 +18,7 @@ div#page.site
 		// -o-transition: transform 0.3s ease-out;
 		// transition: transform 0.3s ease-out;
 		@include ease;
-	    
+
 		div#primary.content-area
 		{
 			main#main.site-main
@@ -57,7 +57,7 @@ div#page.site
 						padding-bottom: 350px;
 						text-align: center;
 						color: white;
-						
+
 						font-size: 18px;
 					}
 				}
@@ -76,7 +76,7 @@ div#page.site
 				  	}
 				}
 
-				.arrow-wrap .arrow 
+				.arrow-wrap .arrow
 				{
 					-webkit-animation: arrows 2.8s 0.4s;
 					-webkit-animation-delay: 2s;
@@ -96,7 +96,7 @@ div#page.site
 					border-radius:50%;
 					font-size:0.5em;
 					display:block;
-					
+
 
 					@include breakpoint(small-phone)
 					{
@@ -113,7 +113,7 @@ div#page.site
   						opacity:1;
 					}
 
-					.arrow 
+					.arrow
 					{
 						float:left;
 						position:relative;
@@ -125,7 +125,7 @@ div#page.site
 						-webkit-transform:rotate(360deg)
 					}
 
-					.arrow:after 
+					.arrow:after
 					{
 						content:'';
 						position:absolute;
@@ -139,7 +139,7 @@ div#page.site
 						-webkit-transform:rotate(360deg)
 					}
 
-					@-webkit-keyframes arrows 
+					@-webkit-keyframes arrows
 					{
 					    0% { top:0; }
 					    10% { top:12%; }
@@ -167,6 +167,24 @@ div#page.site
 
 					div.row
 					{
+
+						max-width: 600px;
+				    display: block;
+				    margin: auto;
+
+						iframe.twitter-share-button.twitter-share-button-rendered.twitter-tweet-button
+						{
+							margin-top: 5px;
+							float: right;
+							margin-left: 15px;
+						}
+
+						div.fb-share-button.fb_iframe_widget
+						{
+							float: right;
+							margin-top: 5px;
+						}
+
 						.half
 						{
 							@include breakpoint(tablet)
@@ -184,7 +202,7 @@ div#page.site
 
 						img
 						{
-							
+
 						}
 
 						a
@@ -250,7 +268,7 @@ div#page.site
 						}
 
 						h2
-						{	
+						{
 							font-family: 'Inconsolata', ;
 							font-size: 35px;
 							text-align: center;
@@ -368,14 +386,14 @@ div#page.site
 
 								span.goal-number
 								{
-									
+
 									font-weight: bold;
-									
+
 								}
 
 								span.goal-label
 								{
-									
+
 								}
 							}
 
@@ -385,19 +403,19 @@ div#page.site
 						  		margin: 0 auto;
 						  		width: 110px;
 						  		display: block;
-						  		
-						  		
+
+
 
 								span.goal-number
 								{
-									
+
 									font-weight: bold;
-									
+
 								}
 
 								span.goal-label
 								{
-									
+
 								}
 							}
 
@@ -405,7 +423,7 @@ div#page.site
 							{
 						  		padding-right: 10px;
 						  		margin: 0;
-						  		
+
 						  		float: right;
 
 						  		@include breakpoint(phone)
@@ -422,7 +440,7 @@ div#page.site
 
 								span.goal-label
 								{
-									
+
 								}
 							}
 						}
@@ -432,11 +450,11 @@ div#page.site
 							float: left;
 						  	margin-left:40%;
 						  	cursor: pointer;
-						  	
+
 
 						  	&:hover
 						  	{
-						  		
+
 						  		// color: green;
 						  	}
 
@@ -463,11 +481,11 @@ div#page.site
 						  	margin-right:40%;
 						  	cursor: pointer;
 
-						  	
+
 
 						  	&:hover
 						  	{
-						  		
+
 						  		// color: green;
 						  	}
 
@@ -551,9 +569,9 @@ div#page.site
 							line-height: 30px;
 						}
 
-							
 
-								
+
+
 
 						input:not(#ninja_forms_field_4), textarea
 						{
@@ -590,7 +608,7 @@ div#page.site
 							{
 								@include ease;
 								background-color: $gray;
-								
+
 							}
 
 							@include breakpoint(tablet)
@@ -793,8 +811,8 @@ div#page.site
 		}
 
 
-					
-					
+
+
 		aside#secondary.widget-area
 		{
 

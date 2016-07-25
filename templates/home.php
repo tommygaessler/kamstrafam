@@ -25,15 +25,21 @@ get_header();
 				</a>
 
 				<div id="mission">
-					<div class="row">
+
+					<div class="blogPostRow">
 						<h2><?php the_field('our_mission'); ?></h2>
-						<!-- <div class="column half">
+						<?php the_field('video'); ?>
+					</div>
+					<div class="row">
+						<div class="column half">
 							<img src="<?php the_field('family_photo'); ?>">
 						</div>
 						<div class="column half">
 							<p><?php the_field('our_mission_description'); ?></p>
-						</div> -->
-						<!-- <h2>Recent Blog Post</h2> -->
+						</div>
+					</div>
+					<div class="blogPostRow">
+						<h2>Recent Blog Post</h2>
 
 						<?php $the_query = new WP_Query( 'posts_per_page=1' ); ?>
 

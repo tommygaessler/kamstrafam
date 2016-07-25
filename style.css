@@ -814,7 +814,14 @@ div#page.site div#content.site-content {
     div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.blogPostRow {
       max-width: 600px;
       display: block;
-      margin: auto; }
+      width: 85%;
+      margin: 0 auto;
+      *zoom: 1; }
+      div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.blogPostRow:after {
+        clear: both; }
+      div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.blogPostRow:after, div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.blogPostRow:before {
+        content: '';
+        display: table; }
       div#page.site div#content.site-content div#primary.content-area main#main.site-main div#mission div.blogPostRow iframe.twitter-share-button.twitter-share-button-rendered.twitter-tweet-button {
         margin-top: 5px;
         float: right;

@@ -29,13 +29,13 @@
 
 <!-- OpenGraph -->
 
+<meta property="fb:app_id" content="574615276043999" />
 <meta property="og:title" content="<?php the_title(); ?>" />
 <meta property="og:description" content="<?php the_field('155_word_description'); ?>" />
 <meta property="og:image" content="<?php the_field('background_image'); ?>" />
-<meta property="og:type" content="article" />
-<meta property="article:author" content="<?php the_author(); ?>" />
-<meta property="og:site_name" content="KamstraFam" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="<?php the_permalink(); ?>" />
+<meta property="og:site_name" content="KamstraFam" />
 
 <!-- Links -->
 

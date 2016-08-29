@@ -44,11 +44,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/genericons/genericons.css">
 
-<!-- Scripts -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/min/jquery-min.js"></script>
-
 <?php wp_head(); ?>
 </head>
 

@@ -8,15 +8,6 @@ div#page.site
 
 	div#content.site-content
 	{
-		// -webkit-transition: all 0.3s ease-in;
-	 //    -moz-transition: all 0.3s ease-in;
-	 //    -ms-transition: all 0.3s ease-in;
-	 //    -o-transition: all 0.3s ease-in;
-	 //    transition: all 0.3s ease-in;
-	 //    -webkit-transition: -webkit-transform 0.3s ease-out;
-		// -moz-transition: transform 0.3s ease-out;
-		// -o-transition: transform 0.3s ease-out;
-		// transition: transform 0.3s ease-out;
 		@include ease;
 
 		div#primary.content-area
@@ -29,25 +20,16 @@ div#page.site
 					position: relative;
 					z-index: 2;
 					background-size: cover;
-    				background-position: center center;
-    				// -webkit-transition: all 0.3s ease-out;
-				    // -moz-transition: all 0.3s ease-out;
-				    // -ms-transition: all 0.3s ease-out;
-				    // -o-transition: all 0.3s ease-out;
-				    // transition: all 0.3s ease-out;
-				    // -webkit-transition: -webkit-transform 0.3s ease-out;
-				    // -moz-transition: transform 0.3s ease-out;
-				    // -o-transition: transform 0.3s ease-out;
-				    // transition: transform 0.3s ease-out;
+    			background-position: center center;
 
 					h1
 					{
 						margin: 0;
 						padding-top: 150px;
-					    text-align: center;
-					    color: white;
-					    font-family: 'Nothing You Could Do', cursive;
-					    font-size: 45px;
+				    text-align: center;
+				    color: white;
+				    font-family: 'Nothing You Could Do', cursive;
+				    font-size: 45px;
 					}
 
 					p
@@ -110,7 +92,7 @@ div#page.site
 
 					&:hover
 					{
-  						opacity:1;
+  					opacity:1;
 					}
 
 					.arrow
@@ -160,10 +142,10 @@ div#page.site
 					padding-top: 60px;
 					background: white;
 					-webkit-transition: all 0.3s ease-out;
-				    -moz-transition: all 0.3s ease-out;
-				    -ms-transition: all 0.3s ease-out;
-				    -o-transition: all 0.3s ease-out;
-				    transition: all 0.3s ease-out;
+			    -moz-transition: all 0.3s ease-out;
+			    -ms-transition: all 0.3s ease-out;
+			    -o-transition: all 0.3s ease-out;
+			    transition: all 0.3s ease-out;
 
 					div.row
 					{
@@ -254,11 +236,6 @@ div#page.site
 							font-size: 35px;
 						}
 
-						img
-						{
-
-						}
-
 						a
 						{
 							text-decoration: none;
@@ -293,10 +270,10 @@ div#page.site
 					background: white;
 					padding-top: 60px;
 					-webkit-transition: all 0.3s ease-out;
-				    -moz-transition: all 0.3s ease-out;
-				    -ms-transition: all 0.3s ease-out;
-				    -o-transition: all 0.3s ease-out;
-				    transition: all 0.3s ease-out;
+			    -moz-transition: all 0.3s ease-out;
+			    -ms-transition: all 0.3s ease-out;
+			    -o-transition: all 0.3s ease-out;
+			    transition: all 0.3s ease-out;
 
 
 					div.row
@@ -363,212 +340,6 @@ div#page.site
 								}
 							}
 						}
-
-
-
-						form#sc_checkout_form_1
-						{
-							margin-bottom: 0;
-
-							@include breakpoint(phone)
-							{
-								margin-bottom: 20px;
-							}
-						}
-
-						form#sc_checkout_form_2
-						{
-							margin-bottom: 0;
-
-							@include breakpoint(phone)
-							{
-								margin-bottom: 20px;
-							}
-						}
-
-						div#countdown-wrap
-						{
-
-							width: 100%;
-						  	height: 160px;
-						  	padding: 0;
-						  	font-family: arial;
-
-							div#goal
-							{
-								font-size: 48px;
-								text-align: right;
-								width: 100%;
-
-								span
-								{
-									font-size: 30px;
-								}
-							}
-
-							div#glass
-							{
-
-								width: 100%;
-						  		height: 20px;
-						  		background: #c7c7c7;
-						  		border-radius: 10px;
-						  		float: left;
-						  		overflow: hidden;
-						  		margin-bottom: 10px;
-
-								div#progress
-								{
-									float: left;
-						  			height: 20px;
-						  			background: #478978;
-						  			z-index: 333;
-								}
-							}
-
-							div.goal-stat-funded
-							{
-						  		padding-left: 10px;
-						  		margin: 0;
-						  		float: left;
-
-						  		@include breakpoint(phone)
-						  		{
-						  			padding-left: 0;
-						  		}
-
-
-								span.goal-number
-								{
-
-									font-weight: bold;
-
-								}
-
-								span.goal-label
-								{
-
-								}
-							}
-
-							div.goal-stat-raised
-							{
-						  		padding-top: 0;
-						  		margin: 0 auto;
-						  		width: 110px;
-						  		display: block;
-
-
-
-								span.goal-number
-								{
-
-									font-weight: bold;
-
-								}
-
-								span.goal-label
-								{
-
-								}
-							}
-
-							div.goal-stat-countdown
-							{
-						  		padding-right: 10px;
-						  		margin: 0;
-
-						  		float: right;
-
-						  		@include breakpoint(phone)
-						  		{
-						  			padding-right: 0;
-						  		}
-
-								span.goal-number
-								{
-									float: left;
-									margin-right: 5px;
-									font-weight: bold;
-								}
-
-								span.goal-label
-								{
-
-								}
-							}
-						}
-
-						.monthly
-						{
-							float: left;
-						  	margin-left:40%;
-						  	cursor: pointer;
-
-
-						  	&:hover
-						  	{
-
-						  		// color: green;
-						  	}
-
-						  	@include breakpoint(tablet)
-						  	{
-						  		margin-left: 35%;
-						  	}
-
-						  	@include breakpoint(phone)
-						  	{
-						  		margin-left: 25%;
-						  	}
-						}
-
-						.monthly-content
-						{
-						  	text-align:center;
-						  	padding-top: 50px;
-						}
-
-						.single
-						{
-						  	float:right;
-						  	margin-right:40%;
-						  	cursor: pointer;
-
-
-
-						  	&:hover
-						  	{
-
-						  		// color: green;
-						  	}
-
-						  	@include breakpoint(tablet)
-						  	{
-						  		margin-right: 35%;
-						  	}
-
-						  	@include breakpoint(phone)
-						  	{
-						  		margin-right: 25%;
-						  	}
-						}
-
-						.single-content
-						{
-						  	text-align:center;
-						  	padding-top: 50px;
-						}
-
-						.display-none
-						{
-						  	display: none;
-						}
-
-						.border-bottom
-						{
-						  	border-bottom: 3px solid #C48B76;
-						}
 					}
 				}
 
@@ -623,10 +394,6 @@ div#page.site
 							line-height: 30px;
 						}
 
-
-
-
-
 						input:not(#ninja_forms_field_4), textarea
 						{
 							background-color: $gray;
@@ -662,7 +429,6 @@ div#page.site
 							{
 								@include ease;
 								background-color: $gray;
-
 							}
 
 							@include breakpoint(tablet)
@@ -683,8 +449,6 @@ div#page.site
 								color: #a94442;
 							}
 						}
-
-
 					}
 				}
 
@@ -693,10 +457,10 @@ div#page.site
 					padding-top: 60px;
 					background: white;
 					-webkit-transition: all 0.3s ease-out;
-				    -moz-transition: all 0.3s ease-out;
-				    -ms-transition: all 0.3s ease-out;
-				    -o-transition: all 0.3s ease-out;
-				    transition: all 0.3s ease-out;
+			    -moz-transition: all 0.3s ease-out;
+			    -ms-transition: all 0.3s ease-out;
+			    -o-transition: all 0.3s ease-out;
+			    transition: all 0.3s ease-out;
 
 					div.row
 					{
@@ -864,146 +628,37 @@ div#page.site
 			}
 		}
 
-
-
-
 		aside#secondary.widget-area
 		{
 
 			section#search-2.widget.widget_search
 			{
-
 				display: none;
-
-				form.search-form
-				{
-					label
-					{
-						span.screen-reader-text
-						{
-
-						}
-
-						input.search-field
-						{
-
-						}
-					}
-
-					input.search-submit
-					{
-
-					}
-				}
 			}
 
 			section#recent-posts-2.widget.widget_recent_entries
 			{
-
 				display: none;
-
-				h2.widget-title
-				{
-
-				}
-
-				ul
-				{
-					li
-					{
-						a
-						{
-
-						}
-					}
-				}
 			}
 
 			section#recent-comments-2.widget.widget_recent_comments
 			{
-
 				display: none;
-
-				h2.widget-title
-				{
-
-				}
-
-				ul#recentcomments
-				{
-					li.recentcomments
-					{
-						span.comment-author-link
-						{
-							a
-							{
-
-							}
-						}
-					}
-				}
 			}
 
 			section#archives-2.widget.widget_archive
 			{
-
 				display: none;
-
-				h2.widget-title
-				{
-
-				}
-
-				ul
-				{
-					li
-					{
-						a
-						{
-
-						}
-					}
-				}
 			}
 
 			section#categories-2.widget.widget_categories
 			{
-
 				display: none;
-
-				h2.widget-title
-				{
-					ul
-					{
-						li.cat-item
-						{
-							a
-							{
-
-							}
-						}
-					}
-				}
 			}
 
 			section#meta-2.widget.widget_meta
 			{
-
 				display: none;
-
-				h2.widget-title
-				{
-					ul
-					{
-						li
-						{
-							a
-							{
-
-							}
-						}
-					}
-				}
 			}
 		}
 	}

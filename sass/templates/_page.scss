@@ -17,19 +17,14 @@ body.page:not(.home)
 
 			div#primary.content-area
 			{
-
-				
-
 				main#main.site-main
 				{
 					div.row
 					{
 						div.hero
 						{
-
-
 							background-size: cover;
-		    				background-position: center center;
+		    			background-position: center center;
 
 							h1
 							{
@@ -76,9 +71,6 @@ body.page:not(.home)
 										text-decoration: none;
 										color: $darkgreen;
 										text-decoration: none;
-
-										
-									
 										@include ease;
 
 										&:hover

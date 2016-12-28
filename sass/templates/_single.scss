@@ -8,28 +8,18 @@ body.single
 
 		background-color: $gray;
 
-		a.skip-link.screen-reader-text
-		{
-			
-		}
-
 		div#content.site-content
 		{
 
 			margin-top: 72px;
 			-webkit-transition: all 0.3s ease-out;
-		    -moz-transition: all 0.3s ease-out;
-		    -ms-transition: all 0.3s ease-out;
-		    -o-transition: all 0.3s ease-out;
-		    transition: all 0.3s ease-out;
-
-			
+	    -moz-transition: all 0.3s ease-out;
+	    -ms-transition: all 0.3s ease-out;
+	    -o-transition: all 0.3s ease-out;
+	    transition: all 0.3s ease-out;
 
 			div#primary.content-area
 			{
-
-				
-
 				main#main.site-main
 				{
 					max-width: 600px;
@@ -40,8 +30,6 @@ body.single
 					{
 						margin-top: 20px;
 						background-color: white;
-
-						
 
 						header.entry-header
 						{
@@ -149,11 +137,6 @@ body.single
 								}
 							}
 
-							figure.wp-caption.alignnone
-							{
-								
-							}
-
 							iframe.twitter-share-button.twitter-share-button-rendered.twitter-tweet-button
 							{
 								margin-top: 30px;
@@ -209,7 +192,6 @@ body.single
 							span.cat-links
 							{
 								display: block;
-								
 
 								a
 								{
@@ -228,7 +210,6 @@ body.single
 
 							span.edit-link
 							{
-
 								a
 								{
 									color: $orange;
@@ -242,20 +223,15 @@ body.single
 						font-size: 18px;
 						line-height: 30px;
 
-						h2.screen-reader-text
-						{
-							
-						}
-
 						div.nav-links
 						{
 
 							div.nav-next
 							{
 
-								
+
 								margin-top: 20px;
-								
+
 								float: right;
 
 								a:nth-child(1)
@@ -272,7 +248,6 @@ body.single
 										color: $turquoise;
 										@include ease;
 									}
-									
 
 									p
 									{
@@ -280,8 +255,6 @@ body.single
 										margin-bottom: 10px;
 										font-size: 18px;
 										line-height: 30px;
-										
-										
 									}
 								}
 
@@ -296,13 +269,13 @@ body.single
 							{
 								float: left;
 								margin-top: 20px;
-								
+
 
 								a:nth-child(1)
 								{
 									text-decoration: none;
 									color: $darkturquoise;
-									
+
 									@include ease;
 
 									&:hover
@@ -335,12 +308,6 @@ body.single
 						h2.comments-title
 						{
 							display: none;
-							
-
-							span
-							{
-
-							}
 						}
 
 						h3
@@ -359,7 +326,7 @@ body.single
 								article.comment-body
 								{
 									padding: 15px;
-								
+
 
 									footer.comment-meta
 									{
@@ -384,7 +351,7 @@ body.single
 
 											span.says
 											{
-												
+
 												display: block;
 												vertical-align: 20px;
 											}
@@ -394,7 +361,7 @@ body.single
 										{
 											pointer-events: none !important;
    											cursor: default !important;
-										
+
 											a.comment-edit-link
 											{
 												display: none;
@@ -413,7 +380,7 @@ body.single
 													pointer-events: none !important;
    													cursor: default !important;
    													color: black;
-													
+
 												}
 											}
 										}
@@ -426,9 +393,6 @@ body.single
 
 									div.comment-content
 									{
-
-										
-
 										p
 										{
 											font-size: 18px;
@@ -438,9 +402,6 @@ body.single
 
 									div.reply
 									{
-
-										
-
 										a.comment-reply-link
 										{
 											text-decoration: none;
@@ -448,23 +409,13 @@ body.single
 										}
 									}
 								}
-
-								ol.children
-								{
-									li
-									{
-
-									}
-								}
 							}
 						}
-						
 
 						div#respond
 						{
 							h3#reply-title.comment-reply-title
 							{
-								
 								small
 								{
 									a
@@ -478,18 +429,7 @@ body.single
 							{
 								p.comment-notes
 								{
-
 									display: none;
-
-									span#email-notes
-									{
-
-									}
-
-									span.required
-									{
-
-									}
 								}
 
 								p.logged-in-as
@@ -502,9 +442,6 @@ body.single
 
 								p.comment-form-comment
 								{
-
-
-
 									label
 									{
 										display: none;
@@ -525,12 +462,6 @@ body.single
 									label
 									{
 										display: none;
-										
-
-										span.required
-										{
-
-										}
 									}
 
 									input#author
@@ -546,13 +477,7 @@ body.single
 								{
 									label
 									{
-
 										display: none;
-
-										span.required
-										{
-
-										}
 									}
 
 									input#email
@@ -564,26 +489,10 @@ body.single
 									}
 								}
 
-
 								p.comment-form-url
 								{
 
 									display: none;
-
-									label
-									{
-										
-
-										span.required
-										{
-
-										}
-									}
-
-									input#url
-									{
-
-									}
 								}
 
 								p.form-submit

@@ -1069,18 +1069,6 @@ div#page.site div#content.site-content {
       @media (max-width: 620px) {
         div#page.site div#content.site-content div#primary.content-area main#main.site-main div#newsletter div.row div#ninja_forms_field_6_div_wrap {
           margin-bottom: 20px; } }
-  div#page.site div#content.site-content aside#secondary.widget-area section#search-2.widget.widget_search {
-    display: none; }
-  div#page.site div#content.site-content aside#secondary.widget-area section#recent-posts-2.widget.widget_recent_entries {
-    display: none; }
-  div#page.site div#content.site-content aside#secondary.widget-area section#recent-comments-2.widget.widget_recent_comments {
-    display: none; }
-  div#page.site div#content.site-content aside#secondary.widget-area section#archives-2.widget.widget_archive {
-    display: none; }
-  div#page.site div#content.site-content aside#secondary.widget-area section#categories-2.widget.widget_categories {
-    display: none; }
-  div#page.site div#content.site-content aside#secondary.widget-area section#meta-2.widget.widget_meta {
-    display: none; }
 
 body.single {
   background-color: white; }

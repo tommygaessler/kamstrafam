@@ -627,39 +627,5 @@ div#page.site
 				}
 			}
 		}
-
-		aside#secondary.widget-area
-		{
-
-			section#search-2.widget.widget_search
-			{
-				display: none;
-			}
-
-			section#recent-posts-2.widget.widget_recent_entries
-			{
-				display: none;
-			}
-
-			section#recent-comments-2.widget.widget_recent_comments
-			{
-				display: none;
-			}
-
-			section#archives-2.widget.widget_archive
-			{
-				display: none;
-			}
-
-			section#categories-2.widget.widget_categories
-			{
-				display: none;
-			}
-
-			section#meta-2.widget.widget_meta
-			{
-				display: none;
-			}
-		}
 	}
 }

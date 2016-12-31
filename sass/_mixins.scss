@@ -11,7 +11,6 @@
     }
 }
 
-
 // -------------- Breakpoints -------------- //
 // Set our breakpoint names
 $breakpoints: (
@@ -37,8 +36,6 @@ $breakpoints: (
     }
 }
 
-
-
 // -------------- Background Images -------------- //
 @mixin background-image($behavior: fixed) {
     background-size: cover !important;
@@ -52,14 +49,10 @@ $breakpoints: (
     }
 }
 
-
-
 // -------------- Transition/Ease -------------- //
 @mixin ease($time:333ms, $el: all, $anim: ease-in-out) {
     transition: $el $time $anim;
 }
-
-
 
 // -------------- Vertically Center -------------- //
 @mixin vertical-align {
@@ -67,8 +60,6 @@ $breakpoints: (
     top: 50%;
     transform: translateY(-50%);
 }
-
-
 
 // -------------- Reset Default Forms -------------- //
 @mixin no-webkit {
